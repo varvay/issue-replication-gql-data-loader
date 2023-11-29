@@ -15,6 +15,8 @@ repositories {
     mavenCentral()
 }
 
+val expedia_version="6.5.6"
+
 dependencies {
     ksp("io.micronaut:micronaut-http-validation")
     ksp("io.micronaut.serde:micronaut-serde-processor")
@@ -27,6 +29,8 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     testImplementation("io.micronaut:micronaut-http-client")
+    implementation("com.expediagroup", "graphql-kotlin-schema-generator", expedia_version)
+    implementation("com.expediagroup", "graphql-kotlin-dataloader", expedia_version)
 }
 
 
