@@ -5,8 +5,15 @@ import jakarta.inject.Singleton
 
 @Singleton
 class AuthorRepository {
-    fun allAuthors(): List<Author> = listOf(
-        Author(id = "1", name = "Tolkien"),
-        Author(id = "2", name = "Rowling"),
+
+    private val authors = mapOf(
+        "1" to Author(id = "1", name = "Tolkien"),
+        "2" to Author(id = "2", name = "Rowling"),
     )
+
+    fun allAuthors(): List<Author> = authors.values.toList()
+    fun getAuthor(id: String): Author {
+        println("author registry: get by id ${id}")
+        return authors[id]!!
+    }
 }

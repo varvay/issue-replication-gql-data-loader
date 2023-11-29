@@ -6,12 +6,12 @@ import jakarta.inject.Singleton
 @Singleton
 class BookRepository {
     fun allBooks(): List<Book> = listOf(
-        Book(id = "1", name = "One"),
-        Book(id = "2", name = "Two"),
-        Book(id = "3", name = "Three"),
-        Book(id = "4", name = "Four"),
-        Book(id = "5", name = "Five"),
-        Book(id = "6", name = "Six"),
-        Book(id = "7", name = "Seven"),
+        Book(id = "1", name = "One", authorId = "1"),
+        Book(id = "2", name = "Two", authorId = "2"),
+        Book(id = "3", name = "Three", authorId = "1"),
+        Book(id = "4", name = "Four", authorId = "2"),
+        Book(id = "5", name = "Five", authorId = "1"),
+        Book(id = "6", name = "Six", authorId = "2"),
+        Book(id = "7", name = "Seven", authorId = "1"),
     )
 }
