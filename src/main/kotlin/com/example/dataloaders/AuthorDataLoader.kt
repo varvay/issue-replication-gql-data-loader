@@ -12,6 +12,7 @@ import java.util.concurrent.CompletableFuture
 class AuthorDataLoader(private val authorRepository: AuthorRepository): KotlinDataLoader<String, Author> {
     override val dataLoaderName = "AuthorDataLoader"
     override fun getDataLoader(): DataLoader<String, Author> {
+        println("get dataloader")
         val loader = DataLoaderFactory.newDataLoader { ids ->
             println("data loader: fetch ids ${ids}")
             CompletableFuture.supplyAsync {
