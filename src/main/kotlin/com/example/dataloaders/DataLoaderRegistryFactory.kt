@@ -10,6 +10,7 @@ import org.dataloader.DataLoaderRegistry
 @Factory
 class DataLoaderRegistryFactory(private val authorDataLoader: AuthorDataLoader) {
 
+    // this works with Bean or Singleton but not with request
 //    @RequestScope
     @Bean
 //    @Singleton

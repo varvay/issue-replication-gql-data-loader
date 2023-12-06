@@ -1,9 +1,14 @@
 package com.example.repositories
 
 import com.example.entities.Author
+import io.micronaut.context.annotation.Bean
+import io.micronaut.runtime.http.scope.RequestScope
 import jakarta.inject.Singleton
 
-@Singleton
+// this works with Bean or Singleton but not with request
+//@Singleton
+@RequestScope
+//@Bean
 class AuthorRepository {
 
     private val authors = mapOf(
