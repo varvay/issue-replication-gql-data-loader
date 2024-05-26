@@ -1,7 +1,7 @@
 # dataloaders
 
 This is an example repository showing problems of using `@RequestScope`
-with [Micronaut](https://micronaut.io/) and [graphql-kotlin](https://opensource.expediagroup.com/graphql-kotlin/docs/)
+with [Micronaut](https://micronaut.io/) and [graphql-kotlin](https://opensource.expediagroup.com/graphql-kotlin/docs/). Issue raised on [GitHub](https://github.com/micronaut-projects/micronaut-graphql/issues/483).
 
 
 
